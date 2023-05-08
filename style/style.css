@@ -1,0 +1,187 @@
+:root {
+  /* Colors */
+  --bg-buttons-blue: #4285f4;
+  --text-light-color: #fff;
+  --bg-buttons-gray: #f0f0f0;
+  --text-dark-color: #000000;
+  --border-color: #d3d3d3;
+}
+
+html {
+  font-size: 62.5%;
+  list-style-type: none;
+  text-transform: capitalize;
+}
+
+/* ! Tüm Browser'larda Aynı olsun diye sıfırlama yaptık. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ! Header-Navbar */
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+}
+.header .navbar .navbar_right,
+.header .navbar .navbar_left {
+  width: 40rem;
+  padding: 0.8rem;
+  font-size: 1.8rem;
+  padding-left: 2rem;
+  text-align: center;
+}
+
+.header .navbar_left a,
+.header .navbar .navbar_right a {
+  padding: 0.8rem;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+.buttons_blue {
+  font-size: 1.6rem;
+  font-weight: 600;
+  height: 3rem;
+  width: 7rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  border: none;
+  outline: none;
+  background-color: var(--bg-buttons-blue);
+  color: var(--text-light-color);
+}
+.header .navbar_left a:hover,
+.header .navbar .navbar_right a:hover {
+  border-bottom: 1px solid rgb(10, 9, 9);
+  color: rgba(0, 0, 0, 1);
+}
+.buttons_blue:hover {
+  cursor: pointer;
+  background-color: #7da8ec;
+  color: #1a1919;
+}
+.buttons_blue .sign a {
+  color: var(--text-light-color);
+}
+.navbar_right img {
+  position: relative;
+  top: 0.7rem;
+  opacity: 0.5;
+}
+.navbar_right img:hover {
+  opacity: 1;
+}
+.header .navbar .navbar_right {
+  position: relative;
+  left: 2rem;
+}
+
+.navbar_left {
+  display: flex;
+  justify-content: start;
+}
+
+.main_menu {
+height: 28rem;
+text-align: center;
+margin: 16rem 0 0 0;
+}
+.main_search_bar {
+  border: 2px solid #d3d3d3;
+  height: 4rem;
+  width: 46rem;
+  display: flex;
+  margin: 2rem auto;
+  border-radius: 2.5rem;
+  background-color: var(--text-light-color);
+  position: relative;
+}
+
+.main_search_bar img {
+  margin-top: 2px;
+}
+
+.main_search_bar input {
+  height: 3.5rem;
+  width: 350rem;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.main_buttons {
+  height: 4.6rem;
+
+}
+
+.btn {
+  width: 15rem;
+  height: 4rem;
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  margin: 10px;
+  opacity: 0.8;
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 0 rgb(211, 211, 211);
+    outline: 1px solid var(--bg-buttons-gray);
+    opacity: 1;
+}
+
+.main_menu p{
+    margin: 5rem 0;
+    font-size: 2rem;
+    color: #1a1919;
+}
+
+.footer_menu{
+    height: 8rem;
+    position: fixed;
+    bottom: 0;
+    background-color: #e4e4e4;
+    width: 100%;
+}
+
+.footer_menu .country{
+    font-size: 1.8rem;
+    padding: 1.2rem;
+}
+
+.footer_menu .bottom_left{
+    float: left;
+    list-style-type: none;
+    display: flex;
+    margin-top: 2px;
+}
+
+.footer_menu .bottom_left a , .footer_menu .bottom_right a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 10px;
+    color: #413c3c;
+
+}
+.footer_menu .bottom_right{
+    float: right;
+    list-style-type: none;
+    display: flex;
+    margin-top: 2px;
+}
+
+.footer_menu .bottom_left a:hover , .footer_menu .bottom_right a:hover{
+border-bottom: 1px solid black;
+
+}
+
+hr{
+    opacity: 0.2;
+}
+
